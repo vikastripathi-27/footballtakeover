@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Seria A</title>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-131020886-1"></script>
+	<script>
+  	window.dataLayer = window.dataLayer || [];
+  	function gtag(){dataLayer.push(arguments);}
+  	gtag('js', new Date());
+  	gtag('config', 'UA-131020886-1');
+	</script>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Thunderbolt - Football Takeover">
+	<meta name="keywords" content="football takeover,thunderbolt,football,football score,football news,football information,football match,football league table,standings,Premier league,La Liga,Seria A,Ligue 1,Bundesliga,football stats,football news">
+	<meta name="google-site-verification" content="iPCjQyC94cn-URSNzDptWq5oQkBvez9WYrBMOxNRWRI" />
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <style>img[alt="www.000webhost.com"]{display:none;}</style>
+    <script src="scripts/angular.js"></script>
+    <script src="scripts/script.js"></script>
+</head>
+<body background="images/back.jpg">
+	<div ng-app="myModule" ng-controller="myController">
+		<br><br>
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 back">
+					<p class="league_name"><br>Seria A<br><img src="images/seria.png" id="icon3"></p><br>
+				</div>
+				<div class="col-xs-12"><br><a href="index.html"><p class="league_2"><u>Home</u></p></a></div>
+				<div class="col-xs-3"><br><a href="pl.html"><p class="league_2"><u>EPL </u></p></a></div>
+				<div class="col-xs-3"><br><a href="laliga.html"><p class="league_2"><u>La Liga</u></p></a></div>
+				<div class="col-xs-3"><br><a href="bundesliga.html"><p class="league_2"><u>Bundesliga</u></p></a></div>
+				<div class="col-xs-3"><br><a href="ligue1.html"><p class="league_2"><u>Ligue 1</u></p></a></div>
+			</div>
+			<div class="row"><hr>
+				<div class="col-xs-12"><br>
+					<div class="col-xs-2"></div>
+					<div class="col-xs-4"><p class="details" ng-click="scrollTo('stand1')"><button class="btn-default"><kbd>Standings</kbd></button></p></div>
+					<div class="col-xs-4"><p class="details" ng-click="scrollTo('fix1')"><button class="btn-default"><kbd>Fixtures</kbd></button></p></div>
+					<div class="col-xs-2"></div>
+				</div>
+				<div class="col-xs-12"><br><br>
+					<div class="col-xs-1"></div>
+					<div class="col-xs-3"><p class="details" ng-click="scrollTo('scorer1')"><button class="btn-success">Top Scorer</button></p></div>
+					<div class="col-xs-3"><p class="details" ng-click="scrollTo('assist1')"><button class="btn-success">Most Assists</button></p></div>
+					<div class="col-xs-3"><p class="details" ng-click="scrollTo('cs1')"><button class="btn-success">Most Cleansheets</button></p></div>
+					<div class="col-xs-2"></div>
+				</div>
+				<div class="col-xs-12"><hr>
+					<p id="stand1">Standings</p><br>
+					<div class="table-responsive">
+					<table class="table table-bordered">
+						<tr class="data">
+							<th class="table_data">Position</th>
+							<th class="table_data">Club</th>
+							<th class="table_data">Matches Played</th>
+							<th class="table_data">Won</th>
+							<th class="table_data">Draw</th>
+							<th class="table_data">Lost</th>
+							<th class="table_data">GD</th>
+							<th class="table_data">Points</th>
+						</tr>
+						<tr class="info" ng-repeat="cl in cl3">
+							<td class="table_data">{{cl.position}}</td>
+							<td class="table_data">{{cl.club}}</td>
+							<td class="table_data">{{cl.matches}}</td>
+							<td class="table_data">{{cl.won}}</td>
+							<td class="table_data">{{cl.draw}}</td>
+							<td class="table_data">{{cl.lost}}</td>
+							<td class="table_data">{{cl.gd}}</td>
+							<td class="table_data">{{cl.points}}</td>
+						</tr>
+						<tr class="warning" ng-repeat="el in el3">
+							<td class="table_data">{{el.position}}</td>
+							<td class="table_data">{{el.club}}</td>
+							<td class="table_data">{{el.matches}}</td>
+							<td class="table_data">{{el.won}}</td>
+							<td class="table_data">{{el.draw}}</td>
+							<td class="table_data">{{el.lost}}</td>
+							<td class="table_data">{{el.gd}}</td>
+							<td class="table_data">{{el.points}}</td>
+						</tr>
+						<tr class="success" ng-repeat="mid in mid3">
+							<td class="table_data">{{mid.position}}</td>
+							<td class="table_data">{{mid.club}}</td>
+							<td class="table_data">{{mid.matches}}</td>
+							<td class="table_data">{{mid.won}}</td>
+							<td class="table_data">{{mid.draw}}</td>
+							<td class="table_data">{{mid.lost}}</td>
+							<td class="table_data">{{mid.gd}}</td>
+							<td class="table_data">{{mid.points}}</td>
+						</tr>
+						<tr class="danger" ng-repeat="rel in rel3">
+							<td class="table_data">{{rel.position}}</td>
+							<td class="table_data">{{rel.club}}</td>
+							<td class="table_data">{{rel.matches}}</td>
+							<td class="table_data">{{rel.won}}</td>
+							<td class="table_data">{{rel.draw}}</td>
+							<td class="table_data">{{rel.lost}}</td>
+							<td class="table_data">{{rel.gd}}</td>
+							<td class="table_data">{{rel.points}}</td>
+						</tr>
+					</table>
+				    </div>
+				</div>
+				<hr>
+				<div class="col-xs-12"><hr>
+					<p id="fix1">Fixtures</p><br>
+					<p class="matchday"><kbd>Matchday 38</kbd></p>
+						<div class="table-responsive">
+						<table class="table">
+							<tr><th class="table_data">Sampodria vs Juventus </th></tr>
+							<tr><th class="table_data">Cagilari vs Udinese</th></tr>
+							<tr><th class="table_data">Inter Milan vs Empoli </th></tr>
+							<tr><th class="table_data">Atalanta vs Sassuolo vs </th></tr>
+							<tr><th class="table_data">Forsinone vs Chievo </th></tr>
+							<tr><th class="table_data">Roma vs Parma</th></tr>
+							<tr><th class="table_data">Bologna vs Napoli </th></tr>
+							<tr><th class="table_data">Torino vs Lazio</th></tr>
+							<tr><th class="table_data">SPAL vs  AC Milan</th></tr>
+							<tr><th class="table_data"> Fiorentina vs Genoa</th></tr>
+						</table>
+					    </div>
+				</div>
+
+				<div class="col-xs-12"><hr>
+					<p id="scorer1">Top Scorer</p>
+					<div class="table-responsive">
+					<table class="table table-bordered">
+						<tr class="data">
+							<th class="table_data">Postion</th>
+							<th class="table_data">Player's Name</th>
+							<th class="table_data">Club</th>
+							<th class="table_data">Goals</th>
+						</tr>
+						<tr ng-repeat="goal in goal3">
+							<td class="table_data">{{goal.position}}</td>
+							<td class="table_data">{{goal.name}}</td>
+							<td class="table_data">{{goal.club}}</td>
+							<td class="table_data">{{goal.goals}}</td>
+						</tr>
+					</table>
+				    </div>
+				</div>
+
+				<div class="col-xs-12"><hr>
+					<p id="assist1">Most Assists</p>
+					<div class="table-responsive">
+					<table class="table table-bordered">
+						<tr class="data">
+							<th class="table_data">Postion</th>
+							<th class="table_data">Player's Name</th>
+							<th class="table_data">Club</th>
+							<th class="table_data">Assists</th>
+						</tr>
+						<tr ng-repeat="assist in assist3">
+							<td class="table_data">{{assist.position}}</td>
+							<td class="table_data">{{assist.name}}</td>
+							<td class="table_data">{{assist.club}}</td>
+							<td class="table_data">{{assist.assists}}</td>
+						</tr>
+					</table>
+				    </div>
+				</div>
+
+				<div class="col-xs-12"><hr>
+					<p id="cs1">Cleansheets</p>
+					<div class="table-responsive">
+					<table class="table table-bordered">
+						<tr class="data">
+							<th class="table_data">Postion</th>
+							<th class="table_data">Player's Name</th>
+							<th class="table_data">Club</th>
+							<th class="table_data">Cleansheets</th>
+						</tr>
+						<tr ng-repeat="cs in cs3">
+							<td class="table_data">{{cs.position}}</td>
+							<td class="table_data">{{cs.name}}</td>
+							<td class="table_data">{{cs.club}}</td>
+							<td class="table_data">{{cs.cleansheets}}</td>
+						</tr>
+					</table>
+				    </div>
+				</div>
+				<br><br>
+			        <div class="row">
+			        	<div class="col-xs-12"><p id="update">{{update}}</p></div><br>
+			        	<div class="col-xs-12"><p id="copyright">&copy; 2018 Thunderbolt</p></div>
+			        </div>
+			</div>
+		</div>
+	</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>
