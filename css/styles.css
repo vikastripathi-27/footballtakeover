@@ -1,0 +1,224 @@
+.customDiv{
+	margin: 1px;
+	min-height: 300px;
+	background-color: silver;
+	text-align: center;
+	font-size: large;
+}
+
+.heading
+{
+	text-align: center;
+	color: white;
+	font-size: 30px;
+	background-color: black;
+	font-weight: bold;
+}
+
+#hr{
+	border-top: 1px solid black;
+}
+
+.sidebar{
+	background-color: #c06cb9;
+	min-height:730px;
+
+}
+
+.league_1{
+	font-size: 18px;
+	color: white;
+	text-align: center;
+	font-weight: bold;
+}
+
+
+.league_2{
+	font-size: 13px;
+	color: #ff006c;
+	text-align: center;
+}
+
+#copyright{
+	text-align: center;
+	font-size: 15px;
+	color:  white;
+}
+
+.bottom{
+	text-align: center;
+	color: white;
+	font-size: 17px;
+	font-weight: bold;
+}
+
+#header1 { 
+	 width: 200px; 
+	 height: 110px;
+	  }
+#header2 {
+	width: 225px; 
+	height: 90px;
+}
+
+#story_head{
+	font-style: italic;
+	font-size: 21px;
+	color: white;
+}
+
+.story{
+	font-size: 15px;
+	color:solid black;
+	font-weight: bold;
+	padding-left: 25px;
+}
+.story_back {
+	width:107%;
+	background-color: white;
+}
+
+#icon1{
+	height: 110px;
+	width: 165px;
+}
+#icon2{
+	height: 145px;
+	width: 180px;
+}
+#icon3{
+	height: 120px;
+	width: 160px;
+}
+#icon4{
+	height: 120px;
+	width: 185px;
+}
+#icon5{
+	height: 115px;
+	width: 140px;
+}
+
+.league_name{
+	color: white;
+	font-size: 28px;
+	text-align: center;
+	font-style: italic;
+}
+
+.back{
+	background-color: black;
+}
+
+#update {
+	color: grey; 
+	font-size:11px;
+	text-align: left;
+}
+
+.details{
+	text-align: center;
+	font-size:14px;
+	color: black;
+}
+
+.data{
+	background-color: black;
+	color: white;
+}
+
+.table_data{
+	text-align: center;
+	font-size: 14px;
+	color: solid black;
+}
+
+
+#stand1{
+	text-align: center;
+	color: #fb2c00;
+	font-size: 22px;
+}
+
+#fix1{
+	text-align: center;
+	color: #fb2c00;
+	font-size: 22px;
+}
+
+
+#scorer1{
+	text-align: center;
+	color: #fb2c00;
+	font-size: 22px;
+}
+
+#assist1{
+	text-align: center;
+	color: #fb2c00;
+	font-size: 22px;
+}
+
+#cs1{
+	text-align: center;
+	color: #fb2c00;
+	font-size: 22px;
+}
+
+.matchday{
+	text-align: center;
+	color: black;
+	font-size: 18px;
+}
+
+.media{
+	font-size: 18px;
+	color: black;
+}
+
+.link{
+	font-size: 12px;
+	color: #d27157;
+	font-style: italic;
+}
+
+.mail{
+	font-size: 12px;
+	color: #d27157;
+}
+
+.head{
+	text-align: center;
+	color: #3859cb;
+}
+
+#inactive{
+	font-size:11px;
+	color: #867a7a;
+	font-style: italic;
+}
+
+.backcolor{
+	background-color: #defbf8;
+}
+
+#name{
+	font-size: 30px;
+	font-style: italic;
+	color: black;
+	text-align: center;
+}
+
+#name_icon{
+	height: 105px;
+	width: 140px;
+}
+
+#img_align{
+	text-align: center;
+}
+
+.content{
+	color: red;
+	font-size: 18px;
+}
